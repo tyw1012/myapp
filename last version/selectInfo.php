@@ -6,6 +6,7 @@ include 'DBconfig.php';
 // Creating connection.
  $con = mysqli_connect($HostName,$HostUser,$HostPass,$DatabaseName);
 
+mysqli_set_charset($con,"utf8");
 
 $Sql_Query = "select * from test";
 
